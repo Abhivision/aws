@@ -1,8 +1,7 @@
-FROM abhivision/roboadvisor:f0
+FROM abhivision/roboadvisor:f1
 RUN git pull --rebase origin master
 RUN pip install -r requirements.txt
-export DJANGO_SETTINGS_MODULE=app.setting_postgres
-python manage.py collectstatic --noinput -i admin
+RUN export DJANGO_SETTINGS_MODULE=app.setting_postgres
+RUN python3  manage.py collectstatic --noinput -i admin
 RUN npm install
-RUN gulp`
-
+RUN gulp
