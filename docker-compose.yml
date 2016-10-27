@@ -2,7 +2,7 @@ version: '2'
 services:
    db:
      image: postgres:9.5
-     port: 5432
+     ports: 5432
    web:
      image: aws/web:v0
      environment:
