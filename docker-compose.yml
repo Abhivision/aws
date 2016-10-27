@@ -6,7 +6,7 @@ services:
      image: aws/web:v0
      environment:
        - DJANGO_SETTINGS_MODULE=app.setting_postgres
-     command: python3 manage.py runserver --setting=app.setting_postgres 0.0.0.0:8000
+     command: python3 manage.py runserver 0.0.0.0:8000
      ports:
        - "80:8000"
      depends_on:
