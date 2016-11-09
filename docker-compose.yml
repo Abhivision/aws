@@ -24,6 +24,6 @@ services:
 
 volumes:
     data:
-    driver: local-persist
-    driver_opts:
-      mountpoint: /data
+      driver: local-persist
+      driver_opts:
+         mountpoint: /data
