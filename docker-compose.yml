@@ -21,3 +21,9 @@ services:
        - DJANGO_SETTINGS_MODULE=robo_app.prod_settings
      depends_on:
        - db
+
+volumes:
+    data:
+    driver: local-persist
+    driver_opts:
+      mountpoint: /data
