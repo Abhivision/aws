@@ -2,7 +2,7 @@ version: '2'
 services:
    db:
      image: postgres:9.5
-     ports: 
+     ports:
        - "5432:5432"
      volumes:
        - ./data:/var/lib/postgresql/data
@@ -21,9 +21,3 @@ services:
        - DJANGO_SETTINGS_MODULE=robo_app.prod_settings
      depends_on:
        - db
-
-volumes:
-    data:
-      driver: local
-      driver_opts:
-         mountpoint: /data
