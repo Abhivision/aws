@@ -1,8 +1,6 @@
 Steps to setup on aws
 
-- update yum and install git first
-  sudo yum update -y   #require for installing packages
-  sudo yum install -y git #require for getting git repos
+- update yum and install git first : sudo yum update -y, sudo yum install -y git
 - clone this repo
 - clone https://github.com/Abhivision/rRobo
 - install everything from install.sh
