@@ -1,5 +1,3 @@
-sudo yum update -y   #require for installing packages
-sudo yum install -y git #require for getting git repos
 sudo yum install -y docker #docker installation
 sudo service docker start #starts docker service : reboot the virtual machine when it gets done
 sudo usermod -a -G docker ec2-user #grant root user for docker command
