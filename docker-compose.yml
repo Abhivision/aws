@@ -7,7 +7,9 @@ services:
      volumes:
        - ./data:/var/lib/postgresql/data
    web:
-     image: aws/web:v0
+     build:
+       context: .
+       dockerfile: roboadvisor_dockerfile
      environment:
        - DJANGO_SETTINGS_MODULE=app.setting_postgres
      command: python3 manage.py runserver 0.0.0.0:8000
@@ -16,7 +18,9 @@ services:
      depends_on:
        - db
    sentiment:
-     image: aws/sentiment:v0
+     build:
+       context: .
+       dockerfile: sentiment_dockerfile
      environment:
        - DJANGO_SETTINGS_MODULE=robo_app.prod_settings
      depends_on:
