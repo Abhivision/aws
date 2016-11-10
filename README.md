@@ -5,6 +5,7 @@ Steps to setup on aws
 - clone https://github.com/Abhivision/rRobo
 - Go to aws directory
       - Run : bash install.sh
+      - run : sudo rebbot and again make aws ssh connection
       - run everything from setup.sh being into aws directory
             (this will setup the database with price and news)
 - Go to rRobo directory 
