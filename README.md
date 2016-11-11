@@ -5,13 +5,14 @@ Steps to setup on aws
 - Clone https://github.com/Abhivision/rRobo
 - Go to aws directory
       - Run : bash install.sh
-      - Run : sudo rebbot and again make aws ssh connection
-      - Run everything from setup.sh inside aws directory (this will setup the database with price and news)
+      - Run : sudo reboot #and again make aws ssh connection
+      - Run : bash setup.sh #inside aws directory
       - Run : docker-compose run web bash app/pg.sh #create database with price values
       - Run : docker-compose run sentiment  python robo_app/sentiment.py #add news to the database 
 - Go to rRobo directory 
-      - Install everything from install.R
-      - Run initial.sh first and then run.sh (this will run r codes)
+      - Run : Rscript install.R
+      - Run : bash initial.sh first and then 
+      - Run : bash run.sh (this will run r codes) (failing)
   (Command to run R file : Rscript filename)
 - Run job.sh with run.sh (in rRobo : now failing) 
       - For updating the database
