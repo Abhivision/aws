@@ -13,3 +13,4 @@ Steps to setup on aws
       - Install everything from install.R
       - Run initial.sh first and then run.sh (this will run r codes)
   (Command to run R file : Rscript filename)
+- Run job.sh with run.sh (in rRobo : now failing)
