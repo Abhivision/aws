@@ -6,4 +6,6 @@ sudo pip install docker-compose #installs docker-compose
 sudo rpm -Uvh http://www.nic.funet.fi/pub/mirrors/fedora.redhat.com/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm
 sudo yum install -y R
 #postgres setup
-yum install -y postgresql95 postgresql95-server postgresql95-libs postgresql95-contrib postgresql95-devel
+sudo yum install -y postgresql
+sudo yum install -y postgresql-devel
+sudo yum install -y postgresql95 postgresql95-server postgresql95-libs postgresql95-contrib postgresql95-devel
