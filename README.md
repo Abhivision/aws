@@ -11,7 +11,7 @@ Steps to setup on aws
       - Run : docker-compose run sentiment  python robo_app/sentiment.py #add news to the database 
 - Go to rRobo directory 
       - Run : Rscript install.R
-      - Run : bash initial.sh first and then 
+      - Run : bash initial.sh first 
       - Run : bash run.sh (this will run r codes) (failing)
   (Command to run R file : Rscript filename)
 - Run job.sh with run.sh (in rRobo : now failing) 
