@@ -14,8 +14,8 @@ Steps to setup on aws
       - Run : bash initial.sh first 
       - Run : bash run.sh (this will run r codes) (failing)
   (Command to run R file : Rscript filename)
-- Run job.sh with run.sh (in rRobo : now failing) 
-      - For updating the database
-      - And running r scripts
-      - Should be run on daily basis (as cron job : Not yet done)
-- Run deploy.sh for applying new changes
+- Code to be run on daily basis (for updating the database) (as cron job : Not yet done)
+      - Run : bash job.sh 
+      - Run : bash run.sh (inside rRobo : now failing)
+- For applying new changes
+      - Run : bash deploy.sh 
