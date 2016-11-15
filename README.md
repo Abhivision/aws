@@ -9,6 +9,7 @@ Steps to setup on aws
       - Run : bash setup.sh #inside aws directory
       - Run : docker-compose run web bash app/pg.sh #create database with price values
       - Run : docker-compose run sentiment  python robo_app/sentiment.py #add news to the database 
+      - Run : bash setup.sh
 - Go to rRobo directory 
       - Run : Rscript install.R
       - Run : bash initial.sh
