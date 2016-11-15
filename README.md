@@ -18,6 +18,6 @@ Steps to setup on aws
       - Run : bash job.sh 
       - Run : bash run.sh (inside rRobo : now failing)
 - Code to be run on monthly basis (forupdating the databse) (as cron job : Not yet done)
-      - Run : bash install.sh (inside rRobo)
+      - Run : bash initial.sh (inside rRobo)
 - For applying new changes
       - Run : bash deploy.sh 
