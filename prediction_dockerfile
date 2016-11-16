@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 RUN apt-get update
 RUN apt-get install -y vim
 RUN apt-get install -y git
-RUN apt-get install -y R
+RUN sudo yum install -y R
 RUN git clone https://github.com/Abhivision/rRobo.git
 WORKDIR rRobo
 RUN Rscript rRobo/install.R
