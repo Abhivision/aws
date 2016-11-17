@@ -3,9 +3,6 @@ RUN apt-get update
 RUN apt-get install -y vim
 RUN apt-get install -y git
 RUN apt-get -y install r-base
-RUN Rserve(args='--vanilla')
 RUN git clone https://github.com/Abhivision/rRobo.git
 WORKDIR rRobo
-RUN R
-RUN install.packages("RPostgreSQL",repos="http://cran.rstudio.com/")
-RUN q(save="yes")
+RUN Rscript install.R
