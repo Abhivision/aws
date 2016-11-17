@@ -26,9 +26,7 @@ services:
      depends_on:
        - db
    prediction:
-     build:
-       context: .
-       dockerfile: prediction_dockerfile
+     image: r-base:3.3.2
      depends_on:
        - db
        
