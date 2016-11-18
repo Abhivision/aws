@@ -31,6 +31,8 @@ Steps to setup on aws
 
 - For applying new changes
       - Run : bash deploy.sh (inside aws directory)
+
+
 ***not working      
 Steps on aws instance
       - connect to instance
