@@ -33,7 +33,7 @@ Steps to setup on aws
       - Run : bash deploy.sh (inside aws directory)
 
 
-***not working      
+(not working)      
 Steps on aws instance
       - connect to instance
       - Run : curl -L https://github.com/docker/compose/releases/download/1.7.0/docker-compose-`uname -s`-`uname -m` >        ./docker-compose
