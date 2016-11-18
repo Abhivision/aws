@@ -31,4 +31,22 @@ Steps to setup on aws
 
 - For applying new changes
       - Run : bash deploy.sh (inside aws directory)
+***not working      
+Steps on aws instance
+      - connect to instance
+      - Run : curl -L https://github.com/docker/compose/releases/download/1.7.0/docker-compose-`uname -s`-`uname -m` >        ./docker-compose
+      - Run : sudo mv ./docker-compose /usr/bin/docker-compose
+      - Run : sudo chmod +x /usr/bin/docker-compose
+      - Create daily.sh 
+            cd aws
+            bash job.sh
+            cd
+            cd rRobo
+            bash run.sh
+       - Create monthly.sh
+            cd rRobo
+            bash initial.sh
+       - Run : crontab -e
+       - Create cron expressions
+         
 
