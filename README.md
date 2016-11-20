@@ -28,14 +28,14 @@ Steps to setup on aws
       - Run : sudo mv ./docker-compose /usr/bin/docker-compose
       - Run : sudo chmod +x /usr/bin/docker-compose
       - Create daily.sh 
-            - cd aws      
-            - bash job.sh
-            - cd
-            - cd rRobo
-            - bash job.sh
+            cd aws      
+            bash job.sh
+            cd
+            cd rRobo
+            bash job.sh
        - Create monthly.sh
-            - cd rRobo
-            - bash trainMonthly.sh
+            cd rRobo
+            bash trainMonthly.sh
        - Run : crontab -e
        - Create cron expressions
             30 17 * * 1-5 bash daily.sh
