@@ -22,33 +22,30 @@ Steps to setup on aws
       - Run : bash run.sh 
   (Command to run R file : Rscript filename)
 
-- Code to be run on daily basis (for updating the database) (as cron job : Not yet done)
-      - Run : bash job.sh (inside aws directory)
-      - Run : bash run.sh (inside rRobo directory)
-
-- Code to be run on monthly basis (forupdating the databse) (as cron job : Not yet done)
-      - Run : bash initial.sh (inside rRobo directory)
-
-- For applying new changes
-      - Run : bash deploy.sh (inside aws directory)
-
-
-(not working)      
-Steps on aws instance
+- Steps on aws instance to set cronjob
       - connect to instance
       - Run : curl -L https://github.com/docker/compose/releases/download/1.7.0/docker-compose-`uname -s`-`uname -m` >        ./docker-compose
       - Run : sudo mv ./docker-compose /usr/bin/docker-compose
       - Run : sudo chmod +x /usr/bin/docker-compose
       - Create daily.sh 
-            cd aws
+            cd rRobo
+            bash trainDaily.sh
+            cd
+            cd aws      
             bash job.sh
             cd
             cd rRobo
-            bash run.sh
+            bash job.sh
        - Create monthly.sh
             cd rRobo
-            bash initial.sh
+            bash trainMonthly.sh
        - Run : crontab -e
        - Create cron expressions
-         
+            30 17 * * 1-5 bash daily.sh
+            @monthly bash trainMonthly.sh
+            
+- For applying new changes
+      - Run : bash deploy.sh (inside aws directory)
+      - Run : git pull (inside rRobo directory)
+
 
