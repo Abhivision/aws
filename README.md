@@ -29,9 +29,6 @@ Steps to setup on aws
       - Run : sudo mv ./docker-compose /usr/bin/docker-compose
       - Run : sudo chmod +x /usr/bin/docker-compose
       - Create daily.sh 
-            cd rRobo
-            bash trainDaily.sh
-            cd
             cd aws      
             bash job.sh
             cd
