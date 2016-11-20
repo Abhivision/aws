@@ -35,11 +35,14 @@ Steps to setup on aws
             cd rRobo
             bash job.sh
             
-       - Create monthly.sh
+      - Create monthly.sh
+      
             cd rRobo
             bash trainMonthly.sh
-       - Run : crontab -e
-       - Create cron expressions
+            
+      - Run : crontab -e
+      - Create cron expressions
+      
             30 17 * * 1-5 bash daily.sh
             @monthly bash trainMonthly.sh
             
