@@ -18,8 +18,9 @@ Steps to setup on aws
 
 - Go to rRobo directory 
       - Run : Rscript install.R
-      - Run : bash initial.sh
-      - Run : bash run.sh 
+      - Run : bash trainmonthly.sh
+      - Run : bash traindaily.sh
+      - Run : bash job.sh
   (Command to run R file : Rscript filename)
 
 - Steps on aws instance to set cronjob
