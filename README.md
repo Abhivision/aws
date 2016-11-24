@@ -48,7 +48,7 @@ Steps to setup on aws
       - Run : crontab -e
       - Create cron expressions
       
-            30 2 * * 1-5 bash daily.sh
+            30 2 * * 2-6 bash daily.sh
             @monthly bash trainMonthly.sh
             
 - For applying new changes
